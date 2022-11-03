@@ -18,9 +18,19 @@ public class Regex {
         String lastName = sc.nextLine();
         String regex2 = "^[A-Z]{1}[a-z]{2,}$";
         boolean result2 = lastName.matches(regex2);
-        if (result2)
+        if (result2) {
             System.out.println("Last name is valid");
-        else
+        }
+        else {
             System.out.println("Last name is Invalid");
+        }
+        System.out.println("Enter the Email ID");
+        String emailID = sc.nextLine();
+        String regex = "^[A-Za-z0-9+_.-]+@(.+)$";
+        boolean result = emailID.matches(regex);
+        if (result)
+            System.out.println("Email ID is valid");
+        else
+            System.out.println("Email ID is Invalid");
     }
 }
