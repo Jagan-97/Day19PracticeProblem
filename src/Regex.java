@@ -38,7 +38,21 @@ public class Regex {
         String mobileNumber = sc.nextLine();
         String regex4 = "[91]{2} [0-9]{10}";
         boolean result4 = mobileNumber.matches(regex4);
-        if (result4) System.out.println("Phone Number is valid");
-        else System.out.println("Phone Number is Invalid");
+        if (result4) {
+            System.out.println("Phone Number is valid");
+        }
+        else {
+            System.out.println("Phone Number is Invalid");
+        }
+        System.out.println("Enter the Password");
+        String password = sc.nextLine();
+        String regex = "[A-Za-z]{8,}";
+        boolean result = password.matches(regex);
+        if (result) {
+            System.out.println("Password is valid");
+        }
+        else {
+            System.out.println("Password is Invalid");
+        }
     }
 }
