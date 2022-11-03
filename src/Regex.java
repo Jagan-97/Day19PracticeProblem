@@ -26,11 +26,19 @@ public class Regex {
         }
         System.out.println("Enter the Email ID");
         String emailID = sc.nextLine();
-        String regex = "^[A-Za-z0-9+_.-]+@(.+)$";
-        boolean result = emailID.matches(regex);
-        if (result)
+        String regex3 = "^[A-Za-z0-9+_.-]+@(.+)$";
+        boolean result3 = emailID.matches(regex3);
+        if (result3) {
             System.out.println("Email ID is valid");
-        else
+        }
+        else {
             System.out.println("Email ID is Invalid");
+        }
+        System.out.println("Enter the Mobile number");
+        String mobileNumber = sc.nextLine();
+        String regex4 = "[91]{2} [0-9]{10}";
+        boolean result4 = mobileNumber.matches(regex4);
+        if (result4) System.out.println("Phone Number is valid");
+        else System.out.println("Phone Number is Invalid");
     }
 }
