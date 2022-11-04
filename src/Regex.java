@@ -75,5 +75,15 @@ public class Regex {
         else {
             System.out.println("Password is Invalid");
         }
+        System.out.println("Enter the Password");
+        String password3 = sc.nextLine();
+        String regex8 = "[A-Z][a-z]{5}[0-9]{1,}[!@#^%&*]";
+        boolean result8 = password3.matches(regex8);
+        if (result8) {
+            System.out.println("Password is valid");
+        }
+        else {
+            System.out.println("Password is Invalid");
+        }
     }
 }
