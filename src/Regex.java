@@ -46,8 +46,18 @@ public class Regex {
         }
         System.out.println("Enter the Password");
         String password = sc.nextLine();
-        String regex = "[A-Za-z]{8,}";
-        boolean result = password.matches(regex);
+        String regex5 = "[A-Za-z]{8,}";
+        boolean result5 = password.matches(regex5);
+        if (result5) {
+            System.out.println("Password is valid");
+        }
+        else {
+            System.out.println("Password is Invalid");
+        }
+        System.out.println("Enter the Password");
+        String password1= sc.nextLine();
+        String regex6 = "[A-Z][a-z]{7}";
+        boolean result = password1.matches(regex6);
         if (result) {
             System.out.println("Password is valid");
         }
