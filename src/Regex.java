@@ -64,5 +64,16 @@ public class Regex {
         else {
             System.out.println("Password is Invalid");
         }
+        System.out.println("Enter the Password");
+        String password2 = sc.nextLine();
+        //atleast one numeric in pwd
+        String regex7 = "[A-Z][a-z]{5}[0-9]{1,}";
+        boolean result7 = password2.matches(regex7);
+        if (result7) {
+            System.out.println("Password is valid");
+        }
+        else {
+            System.out.println("Password is Invalid");
+        }
     }
 }
